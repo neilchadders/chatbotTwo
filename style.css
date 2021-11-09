@@ -70,3 +70,8 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+/* Setting display to block to test JS 
+#myForm {
+  display: block;
+}
