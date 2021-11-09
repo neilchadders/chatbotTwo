@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Chatbot</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="testchatbot.css">
+  <title></title>
 </head>
 <body>
 
-<button class="open-button" onclick="openForm()">Chat</button>
+  <div id="container" class="container">
+ 
+   <div id="chat" class="chat">
+    <div id="messages" class="messages"></div>
+    
+    <button class="open-button" onclick="openForm()">Chat</button> <!--- this will open the chat bot and ask the initial question -->
 
-<div class="chat-popup" id="myForm">
-  <form class="form-container">
-    <h1>Chat</h1>
-
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required id = "messages"></textarea>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
+    <input id="input" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" />
+  </div>
 </div>
 
-<script type="text/javascript" src = "index.js"></script>
+<script src = "testchatbot.js"></script>
 </body>
 </html>
