@@ -40,9 +40,7 @@ span {
   align-items: center;
 } 
 
-::-webkit-input-placeholder { 
-  color: .711 
-}
+
  
 input { 
   border: 0; 
