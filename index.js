@@ -1,8 +1,8 @@
 const questionArr = [
 
-        "<p class = first-question>Q1 - My product or service is:</p></><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>An idea that I have been toying with for a while</button><button onclick = 'askQuestion()' type='button' class = 'btn btn-primary choice response'>Currently under development, backed by solid market research and a business plan</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>Finally a working prototype being tested by potential customers</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>Now generating revenues</button>",
+        "<p class = first-question>Q1 - My product or service is:</p></><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice response'>An idea that I have been toying with for a while</button><button onclick = 'askQuestion(), secondScore()' type='button' class = 'btn btn-primary choice response'>Currently under development, backed by solid market research and a business plan</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>Finally a working prototype being tested by potential customers</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>Now generating revenues</button>",
 
-        "<p class = 'second-question'>Q2 - My industry is:</p><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>Something that has to do with selling to the general public (retail, food, entertainment, etc.) or to the government</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>A field that nobody yet recognizes as being an industry, because my product is so cutting edge</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>One that was in fashion among investors a few years ago (telecommunications, Internet, B2Anything, etc.)</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>One that is currently in fashion among investors (medical devices, nanotechnology, proteomics, security software, money-saving enterprise software, etc.)</button>",
+        "<p class = 'second-question'>Q2 - My industry is:</p><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice response'>Something that has to do with selling to the general public (retail, food, entertainment, etc.) or to the government</button><button onclick = 'askQuestion(),secondScore()' type='button' class='btn btn-primary choice response'>A field that nobody yet recognizes as being an industry, because my product is so cutting edge</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>One that was in fashion among investors a few years ago (telecommunications, Internet, B2Anything, etc.)</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>One that is currently in fashion among investors (medical devices, nanotechnology, proteomics, security software, money-saving enterprise software, etc.)</button>",
         
         "<p class = 'third-question'>Q3 - My product or service will:</p><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>Have some novelty value (i.e., there is only minor demand for the product in the marketplace)</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>Make life a bit easier or more enjoyable for many people, but not solve any fundamental problems (i.e., a 'nice to have but not a 'must have' for most buyers)</button><button onclick = 'askQuestion()' type='button' class='btn btn-primary choice response'>Help a lot of people or companies do what they do a bit better, faster, and cheaper (i.e., the product addresses a fairly substantial need in the marketplace)</button><button onclick = 'askQuestion()'type='button' class='btn btn-primary choice response'>Save lots of lives and/or money (i.e., the product is urgently needed in the marketplace)</button>",
         
@@ -53,13 +53,32 @@ const questionArr = [
         ];  
 
 
-const newQuestions = document.getElementById('opening');
+        const contactForm = ' <div class="chat-form"><input type="text" class="form-control" placeholder="Name"> <input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button> </div></div>';
 
-var i = 0;
+        const newQuestions = document.getElementById('opening');
 
-function askQuestion() {
+        var i = 0;
+        var score = 0;
+
+        function askQuestion() {
        
-         newQuestions.innerHTML = questionArr[i];
-        i++;
-  
-    }
+                if(i<= questionArr.length-1){
+                newQuestions.innerHTML = questionArr[i];
+                i++;
+                } 
+                else{
+                newQuestions.innerHTML = contactForm;
+                }      
+           }
+
+        function firstScore(){
+                
+                score +=1;
+
+        }
+
+        function secondScore(){
+                
+                score +=2;
+
+        }
