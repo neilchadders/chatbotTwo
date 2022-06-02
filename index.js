@@ -56,6 +56,7 @@ const questionArr = [
         const contactForm = ' <div class="chat-form"><input type="text" class="form-control" placeholder="Name"> <input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button> </div></div>';
 
         const newQuestions = document.getElementById('opening');
+        const updateScore = document.getElementById('scoring');
 
         var i = 0;
         var score = 0;
@@ -73,12 +74,13 @@ const questionArr = [
 
         function firstScore(){
                 
-                score +=1;
+                updateScore.innerHTML = score +=1;
 
         }
 
         function secondScore(){
                 
-                score +=2;
+                updateScore.innerHTML = score +=5;
+
 
         }
