@@ -55,11 +55,11 @@ const questionArr = [
 
 const newQuestions = document.getElementById('opening');
 
-let i = 0;
+var i = 0;
 
 function askQuestion() {
-    
-    
-    newQuestions.innerHTML = questionArr[i];
-    i++;
+       
+         newQuestions.innerHTML = questionArr[i];
+        i++;
+  
     }
