@@ -1,5 +1,12 @@
+
+
+
 body {
-    background-color: #eee
+    background-color: #eee;
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .chat-btn {
