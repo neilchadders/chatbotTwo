@@ -58,8 +58,8 @@ const questionArr = [
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
 
-        var i = 0;
-        var score = 0;
+        let i = 0;
+        let score = 0;
 
         function askQuestion() {
        
@@ -72,26 +72,9 @@ const questionArr = [
                 }      
            }
 
-        function firstScore(){
-                
-                updateScore.innerHTML = score +=1;
+        const  firstScore = () => updateScore.innerHTML = score +=1;
 
-        }
+        const secondScore = () => updateScore.innerHTML = score +=5;
+        const thirdScore = () => updateScore.innerHTML = score +=10;
 
-        function secondScore(){
-                
-                updateScore.innerHTML = score +=5;
-
-
-        }
-
-        function thirdScore(){
-                
-                updateScore.innerHTML = score +=10;
-
-
-        }
-
-        function fourthScore(){
-                updateScore.innerHTML = score += 15;
-        }
+        const fourthScore = () => updateScore.innerHTML = score += 15;
