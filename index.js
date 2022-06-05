@@ -53,7 +53,7 @@ const questionArr = [
         ];  
 
 
-        const contactForm = ' <div class="chat-form"><input type="text" class="form-control" placeholder="Name"> <input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button> </div></div>';
+        const contactForm = '<div class="chat-form"><form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"><input type="text" class="form-control" placeholder="Name"> <input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button></form></div>';
 
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
@@ -72,9 +72,7 @@ const questionArr = [
                 }      
            }
 
-        const  firstScore = () => updateScore.innerHTML = score +=1;
-
+        const firstScore = () => updateScore.innerHTML = score +=1;
         const secondScore = () => updateScore.innerHTML = score +=5;
         const thirdScore = () => updateScore.innerHTML = score +=10;
-
         const fourthScore = () => updateScore.innerHTML = score += 15;
