@@ -53,7 +53,11 @@ const questionArr = [
         ];  
 
 
-        const contactForm = '<div class="chat-form"><form name="contact" method="POST" data-netlify="true"><input type="text" class="form-control" placeholder="Name"> <input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button></form></div>';
+
+        const contactForm = '<form name="contact" method="POST" data-netlify="true"><p><label>Your Name: <input type="text" name="name" /></label></p><p><label>Your Email: <input type="email" name="email" /></label><p><p><label>Your Role: <select name="role[]" multiple><option value="leader">Leader</option><option value="follower">Follower</option></select></label></p><p><label>Message: <textarea name="message"></textarea></label></p><p><button type="submit">Send</button></p></form>';
+
+
+        //const contactForm = '<div class="chat-form"><form name="contactJCB" method="POST" data-netlify="true"><input type="text" class="form-control" placeholder="Name"><input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button></form></div>';
 
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
