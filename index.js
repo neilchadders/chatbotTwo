@@ -55,7 +55,7 @@ const questionArr = [
 
 
 
-        const contactForm = '<div class="chat-form"><form name="contact" method="POST" data-netlify="true"><input type="text" class="form-control" placeholder="Name"><input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button></form></div>';
+        const contactForm = '<div class="chat-form"><form name="contact"><input type="text" class="form-control" placeholder="Name"><input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button></form></div>';
 
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
