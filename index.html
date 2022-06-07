@@ -18,26 +18,32 @@
         
      <main>
         <!-- Main Header-->
-            <h1>ChatBot Score <span id = "scoring">0</span>  </h1>
+            <div>
+                <h1>ChatBot Score <span id = "scoring">0</span>  </h1>
+            </div>
+            
 
       <!-- pop up checkbox-->    
-            <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i> <i class="fa fa-close close"></i> </label>
+            
+              <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i> <i class="fa fa-close close"></i> </label>
+            </div>
+            
             
                    <!-- wrapper for the pop up-->
         <div class="wrapper">
 
             <!-- Internal chat header-->
-           <div class="header">
-              <h6>Let's Chat - Online</h6>
-           </div>
+            <div class="header">
+                <h6>Let's Chat - Online</h6>
+            </div>
    
    
           <!-- Questions-->
          <div id = "opening"> <p>Would you like a business evaluation?</p>
 
-            <p>Answer the following 25 questions, and we’ll calculate an approximate valuation range for you. For each of the following questions, choose the answer that most closely describes your situation. The first choice produces the lowest values; the fourth choice produces the highest value.</p>
+                <p>Answer the following 25 questions, and we’ll calculate an approximate valuation range for you. For each of the following questions, choose the answer that most closely describes your situation. The first choice produces the lowest values; the fourth choice produces the highest value.</p>
 
-            <button onclick = 'askQuestion()' type="button" class="btn btn-primary choice">Continue</button>
+                <button onclick = 'askQuestion()' type="button" class="btn btn-primary choice">Continue</button>
 
           </div>
 
