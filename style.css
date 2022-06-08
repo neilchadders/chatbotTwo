@@ -115,18 +115,13 @@ button {
 .choice {
     margin-right: 3px;
     margin-left: 3px;
+    text-align: left;
+    display: block;
 }
 
 #opening{
-    padding-top: 60px;
+    padding:1em;
     min-height: 45%;
 }
 
-.colour{
-    color: red;
-}
 
-.response {
-    text-align: left;
-    font-size: 0.8rem;
-}
