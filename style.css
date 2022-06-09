@@ -1,11 +1,13 @@
 
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
     background-color: #eee;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   
 }
 
 .chat-btn {
@@ -14,7 +16,7 @@ body {
     bottom: 30px;
     cursor: pointer;
     display: none;
-    width: 50px;
+    width: 200px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -32,12 +34,11 @@ body {
     bottom: 100px;
     width: 40em;
     height: 30em;
-    
     overflow-y: scroll;
     background-color: #fff;
     border-radius: 5px;
     opacity: 0;
-    transition: all 0.4s;
+    transition: all .8s;
          
     
 }
@@ -71,16 +72,15 @@ button {
     resize: none
 }
 
-.form-control:focus,
-.btn:focus {
-    box-shadow: none
-}
 
-.btn,
-.btn:focus,
-.btn:hover {
+
+.btn {
     background-color: blue;
     border: blue
+}
+
+.btn:hover{
+
 }
 
 #check {
@@ -92,11 +92,13 @@ button {
     margin-left: 3px;
     text-align: left;
     display: block;
+    
 }
 
 #opening{
     padding:1em;
     min-height: 45%;
+    
 }
 
 
