@@ -6,12 +6,81 @@
 }
 
 body {
-    background-color: #eee;
+    background-color: #CCCCCC;
    
 }
 
-.chat-btn {
+#main-div-bg{
+    background-image: url("masthead1.png");
+
+    height: 65vh;
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 57vh, 0 100%);
+}
+
+.nav-img{
+
+    max-height: 50px;
+    border: solid 2px;
+   
+}
+
+.header {
+    height: 15vh;
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  
+  .header_text-box {
     position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Good way to centre element*/
+    text-align: center;
+    /* this centres anchor tag class = btn as it's display has been set to in-line which is treated as text*/
+  }
+  
+  .heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    /* This is to stop any shakiness in the animation */
+    margin-bottom: 3em;
+  }
+  
+  .heading-primary-main {
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: .5em;
+    animation: moveInLeft 1s ease-out;
+  }
+  
+  .heading-primary-sub {
+    display: block;
+    font-size: .5em;
+    font-weight: 700;
+    letter-spacing: .5em;
+    animation: moveInRight 1s ease-out;
+  }
+  
+  
+
+
+
+
+/* CHAT */
+.chat-btn {
+    position: fixed;
+    z-index: 9;
     right: 14px;
     bottom: 30px;
     cursor: pointer;
@@ -30,6 +99,7 @@ body {
 
 .wrapper {
     position: fixed;
+    
     right: 2em;
     bottom: 100px;
     width: 40em;
@@ -47,7 +117,7 @@ body {
     opacity: 1
 }
 
-.header {
+.chat-header {
     padding: 13px;
     background-color: blue;
     border-radius: 5px 5px 0px 0px;
@@ -99,6 +169,7 @@ button {
     padding:1em;
     min-height: 45%;
     
+    
 }
 
 
@@ -110,5 +181,3 @@ button {
    }
  }
 
-
-@media (max-width: 575.98px) { ... }
