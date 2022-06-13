@@ -25,6 +25,7 @@ body {
 
     max-height: 50px;
     border: solid 2px;
+    margin-left: 10px;
    
 }
 
@@ -127,10 +128,10 @@ body {
 .wrapper {
     position: fixed;
     
-    right: 2em;
+    right: 15px;
     bottom: 100px;
-    width: 40em;
-    height: 30em;
+    width: 50em;
+    height: 40em;
     overflow-y: scroll;
     background-color: #fff;
     border-radius: 5px;
@@ -202,9 +203,16 @@ button {
 
 @media (max-width: 700px) { 
    .wrapper{
-  
-    width: 90%;
-    
+
+    width: 100%;
+    right: 0;
+    height: 100vh;
+    bottom:0;
+   
+   }
+   #main-div-bg{
+       height: 55vh;
+       clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
    }
  }
 
