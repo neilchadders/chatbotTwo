@@ -10,13 +10,34 @@ body {
    
 }
 
+
 #main-div-bg{
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+  /*  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+
     background-image: url("masthead1.png");
     height: 55vh;
     background-size: cover;
     background-position: top;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+ */
+}
+
+#masthead{
+    max-width: 100%;
+    
+
 }
 
 .nav-img{
