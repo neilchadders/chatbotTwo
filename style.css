@@ -16,7 +16,7 @@ body {
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
 }
 
 .nav-img{
@@ -135,7 +135,7 @@ body {
     border-radius: 5px;
     opacity: 0;
     transition: all .8s;
-         
+   
     
 }
 
@@ -144,6 +144,7 @@ body {
 }
 
 .chat-header {
+    position:fixed;
     padding: 13px;
     background-color: blue;
     border-radius: 5px 5px 0px 0px;
@@ -194,12 +195,14 @@ button {
 #opening{
     padding:1em;
     min-height: 45%;
+    overflow-x:scroll
+         
     
     
 }
 
 
-@media (max-width: 700px) { 
+@media (max-width: 900px) { 
    .wrapper{
 
     width: 100%;
