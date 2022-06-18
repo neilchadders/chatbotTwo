@@ -218,9 +218,9 @@ button {
     bottom:0;
    
    }
-   #main-div-bg{
-       height: 55vh;
-       clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+  .chat-header{
+    margin-top: 10px;
+  }
    }
- }
+
 
