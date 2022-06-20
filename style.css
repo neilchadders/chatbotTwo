@@ -11,14 +11,6 @@ body {
 }
 
 
-#main-div-bg{
-
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
-}
 
 #masthead{
     
@@ -59,20 +51,22 @@ body {
     text-transform: uppercase;
     backface-visibility: hidden;
     /* This is to stop any shakiness in the animation */
-    margin-bottom: 3em;
+  
   }
   
   .heading-primary-main {
     display: block;
-    font-size: 1em;
+    margin-bottom: 30px;
+    font-size: 1.5em;
     font-weight: 400;
     letter-spacing: .5em;
+    margin-top: 200px;
     animation: moveInLeft 1s ease-out;
   }
   
   .heading-primary-sub {
     display: block;
-    font-size: .5em;
+    font-size: 1em;
     font-weight: 700;
     letter-spacing: .5em;
     animation: moveInRight 1s ease-out;
@@ -124,7 +118,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background-color: blue;
+    background-color:#9b5404;
     color: #fff;
     font-size: 22px;
     border: none
@@ -153,7 +147,7 @@ body {
 .chat-header {
     position:fixed;
     padding: 13px;
-    background-color: blue;
+    background-color: #9b5404;
     border-radius: 5px 5px 0px 0px;
     margin-bottom: 10px;
     color: #fff;
@@ -179,8 +173,8 @@ button {
 
 
 .btn {
-    background-color: blue;
-    border: blue
+    background-color:#9b5404;
+    border: black;
 }
 
 .btn:hover{
