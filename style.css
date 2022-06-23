@@ -145,7 +145,8 @@ body {
 }
 
 .chat-header {
-    position:fixed;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     padding: 13px;
     background-color: #9b5404;
     border-radius: 5px 5px 0px 0px;
@@ -153,8 +154,18 @@ body {
     color: #fff;
     position:  relative;
     width: 100%;
+   
+   
     
 }
+  
+  .fa-window-close {
+    padding-left: 60%;
+    text-align: end;
+   
+}
+
+
 
 .chat-form {
     padding: 15px
@@ -167,7 +178,7 @@ button {
 }
 
 .chat-form textarea {
-    resize: none
+    resize: none;
 }
 
 
@@ -218,6 +229,10 @@ button {
 .chat-header {
  
   }
-   }
+   
+  .fa-window-close {
+    padding-right: 10px;
+   
+}
 
 
