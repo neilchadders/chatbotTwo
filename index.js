@@ -1,6 +1,6 @@
 const questionArr = [
 
-        "<p class = 'first question>'Q1 - My product or service is:</p></><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice'>An idea that I have been toying with for a while</button><button onclick = 'askQuestion(), secondScore()' type='button' class = 'btn btn-primary choice'>Currently under development, backed by solid market research and a business plan</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>Finally a working prototype being tested by potential customers</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>Now generating revenues</button>",
+        "<p class = 'first question'>Q1 - My product or service is:</p></><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice'>An idea that I have been toying with for a while</button><button onclick = 'askQuestion(), secondScore()' type='button' class = 'btn btn-primary choice'>Currently under development, backed by solid market research and a business plan</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>Finally a working prototype being tested by potential customers</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>Now generating revenues</button>",
 
         "<p class = 'second question'>Q2 - My industry is:</p><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice'>Something that has to do with selling to the general public (retail, food, entertainment, etc.) or to the government</button><button onclick = 'askQuestion(), secondScore()' type='button' class='btn btn-primary choice'>A field that nobody yet recognizes as being an industry, because my product is so cutting edge</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>One that was in fashion among investors a few years ago (telecommunications, Internet, B2Anything, etc.)</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>One that is currently in fashion among investors (medical devices, nanotechnology, proteomics, security software, money-saving enterprise software, etc.)</button>",
         
@@ -59,6 +59,7 @@ const questionArr = [
 
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
+        const wrapper = document.getElementsByClassName('wrapper');
 
         let i = 0;
         let score = 0;
@@ -78,3 +79,13 @@ const questionArr = [
         const secondScore = () => updateScore.innerHTML = score +=5;
         const thirdScore = () => updateScore.innerHTML = score +=10;
         const fourthScore = () => updateScore.innerHTML = score += 15;
+
+        function viewBox(){
+               
+                wrapper[0].style.display = "none";
+                        
+                      
+               
+        }
+
+        console.log(wrapper);

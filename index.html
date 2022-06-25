@@ -19,9 +19,9 @@
      <main>
         
    
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img class = "nav-img" src="nav.png" alt="logo"></a>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img class = "nav-img" src="nav.png" alt="logo"></a>
+        </nav>
   
       
 
@@ -29,29 +29,29 @@
         <!-- Main Header-->
         <div id = "main-div" class = contaner-fluid>
 
-        <header class = "header">
+           <header class = "header">
          
-          <div class = "header_text-box"> 
-              <h1 class = "heading-primary">
-                   <span class = "heading-primary-main">Ubiq Digital Partners</span>
-                   <span class = "heading-primary-sub">Dynamic</span>
-                   <span class = "heading-primary-sub">Dynamic</span>
-                   <span class = "heading-primary-sub -second"> We need to be more dynamic</span>
-                </h1>
-          </div>
+              <div class = "header_text-box"> 
+                  <h1 class = "heading-primary">
+                     <span class = "heading-primary-main">Ubiq Digital Partners</span>
+                     <span class = "heading-primary-sub">Dynamic</span>
+                     <span class = "heading-primary-sub">Dynamic</span>
+                     <span class = "heading-primary-sub -second"> We need to be more dynamic</span>
+                  </h1>
+              </div>
          
-      </header>
+          </header>
         </div>  
             
        
 
       <!-- pop up checkbox-->    
+          
+              <input type="checkbox" id="check" class = "close check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i></label>
             
-              <input type="checkbox" id="check" class = "close"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i></label>
-            </div>
             
             
-
+            
             
                    <!-- wrapper for the pop up-->
         <div class="wrapper">
@@ -59,19 +59,22 @@
             <!-- Internal chat header-->
             <div class="chat-header grid-container"> <!--Display Flex-->
               
-                <h4 class = "grid-item1">Let's Chat - Online</h4><i class="fa fa-window-close fa-2x grid-item2" aria-hidden="true"></i><h5 class = "grid-item3">Your Score <span id = "scoring">0</span></h5>
+                <h4 class = "grid-item1">Let's Chat - Online</h4>
+                <i onclick = 'viewBox()' class="fa fa-window-close fa-2x grid-item2" aria-hidden="true"></i>
+                <h5 class = "grid-item3">Your Score <span id = "scoring">0</span></h5>
                 
             </div>
    
    
           <!-- Questions-->
-         <div id = "opening" class = "container-fluid" > <p>Would you like a business evaluation?</p>
+            <div id = "opening" class = "container-fluid" > <p>Would you like a business evaluation?</p>
 
                 <p>Answer the following 25 questions, and we’ll calculate an approximate valuation range for you. For each of the following questions, choose the answer that most closely describes your situation. The first choice produces the lowest values; the fourth choice produces the highest value.</p>
 
                 <button onclick = 'askQuestion()' type="button" class="btn btn-primary choice">Continue</button>
 
-          </div>
+            </div>
+        </div>
 
 </main>
 
