@@ -12,29 +12,23 @@ body {
 
 
 
-#masthead{
-    
-    
-
-}
+/* Nav Bar */
 
 .nav-img{
 
     max-height: 50px;
     border: solid 2px;
-    margin-left: 10px;
-   
+    margin-left: 10px;  
 }
 
+/* main header */
 .header {
     height: 15vh;
-
     background-size: cover;
     background-position: top;
     position: relative;
     margin-top: 100px;
   }
-  
   
   .header_text-box {
     position: absolute;
@@ -126,7 +120,6 @@ body {
 
 .wrapper {
     position: fixed;
-    
     right: 15px;
     bottom: 100px;
     width: 50em;
@@ -136,11 +129,9 @@ body {
     border-radius: 5px;
     opacity: 0;
     transition: all .8s;
-   
-    
 }
 
-#check:checked~.wrapper {
+.close:checked~.wrapper {
     opacity: 1
 }
 
@@ -160,12 +151,14 @@ body {
 }
   
   .fa-window-close {
-    padding-left: 60%;
+   
     text-align: end;
    
 }
 
-
+.fa-window-close:hover{
+  cursor: pointer;
+}
 
 .chat-form {
     padding: 15px
