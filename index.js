@@ -66,6 +66,9 @@ const questionArr = [
 
         function askQuestion() {
        
+                
+            
+
                 if(i<= questionArr.length-1){
                 newQuestions.innerHTML = questionArr[i];
                 i++;
@@ -80,12 +83,15 @@ const questionArr = [
         const thirdScore = () => updateScore.innerHTML = score +=10;
         const fourthScore = () => updateScore.innerHTML = score += 15;
 
-        function viewBox(){
+        function closeBox(){
                
-                wrapper[0].style.display = "none";
+                wrapper[0].style.opacity = "0";
                         
                       
                
         }
 
-        console.log(wrapper);
+
+       function viewBox() {
+        wrapper[0].style.opacity = "1";
+       }
