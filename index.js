@@ -60,7 +60,7 @@ const questionArr = [
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
         const wrapper = document.getElementsByClassName('wrapper');
-        const chatButton = document.getElementById('check');
+        const chatButton = document.getElementsByClassName('chat-btn');
 
         let i = 0;
         let score = 0;
@@ -85,14 +85,13 @@ const questionArr = [
         const fourthScore = () => updateScore.innerHTML = score += 15;
 
         function closeBox(){
-               
+                
                 wrapper[0].style.opacity = "0";
-                        
-                      
-               
+                chatButton[0].style.opacity = "1";
         }
 
 
        function viewBox() {
         wrapper[0].style.opacity = "1";
+        chatButton[0].style.opacity = "0";
        }
