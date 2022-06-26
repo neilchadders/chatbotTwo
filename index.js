@@ -60,6 +60,7 @@ const questionArr = [
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
         const wrapper = document.getElementsByClassName('wrapper');
+        const chatButton = document.getElementById('check');
 
         let i = 0;
         let score = 0;
