@@ -16,7 +16,7 @@ const questionArr = [
 
         "<p class = 'eighth question'>Q8 - My sales and marketing plan is:</p><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice'>If I build it, they will come</button><button onclick = 'askQuestion(), secondScore()' type='button' class='btn btn-primary choice'>If I build a website, optimize my keywords, and submit it to Google, they will come</button><button onclick = 'askQuestion(), thirdScore()', type='button' class='btn btn-primary choice'>I will hire a bunch of salespeople on commission only to go sell my product</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>I have an extensive, well-researched sales and marketing plan that includes a mix of proven, cost-effective sales and marketing tactics</button>",
 
-        "<p class = 'ninth question'>Q9 - My revenues over the past 12 months were:</p><button onclick = 'askQuestion(), firstScore()'  type='button' class='btn btn-primary choice'>$0-$999,999</button><button onclick = 'askQuestion(), secondScore() 'type='button' class='btn btn-primary choice'>$1,000,000 - $4,999,999</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>$5,000,000 or more</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>$10,000,000 or more</button>", 
+      /* "<p class = 'ninth question'>Q9 - My revenues over the past 12 months were:</p><button onclick = 'askQuestion(), firstScore()'  type='button' class='btn btn-primary choice'>$0-$999,999</button><button onclick = 'askQuestion(), secondScore() 'type='button' class='btn btn-primary choice'>$1,000,000 - $4,999,999</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>$5,000,000 or more</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>$10,000,000 or more</button>", 
 
         "<p class = 'tenth question'>Q10 - My revenues over the next 12 months are expected to be:</p><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice'>$0-$999,999</button><button onclick = 'askQuestion(), secondScore()' type='button' class='btn btn-primary choice'>$1,000,000 - $4,999,999</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>$5,000,000 - $9,999,999</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>$10,000,000 or more</button>",
 
@@ -45,7 +45,7 @@ const questionArr = [
         "<p class = 'twenty-second question'>Q22 - My intellectual property attorney is:</p><button onclick = 'askQuestion(), firstScore()'  type='button' class='btn btn-primary choice'>Did I tell you about my cousin Sal?</button><button onclick = 'askQuestion(), secondScore()' type='button' class='btn btn-primary choice'>A small local firm that claims to be an intellectual property generalist</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>A small-to-medium sized local firm that works with a lot of startups</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>One of the nationally recognized intellectual property law firms staffed with attorneys who worked in R&D in my field before going to law school</button>",
 
         "<p class = 'twenty-third question'>Q23 - If a Fortune 500 company decided to put their resources behind competing with my startup tomorrow, my startup would be:</p><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice'>Toast</button><button onclick = 'askQuestion(), secondScore()' type='button' class='btn btn-primary choice'>Happy that the market is being validated by a major player, but would have to settle for a smaller market share</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>Able to stay a step ahead through innovation, agility, and speed</button><button onclick = 'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>Delighted to partner with them and license our proprietary technology to them, since there's no way they can get in this market without infringing on our rock-solid patents</button>",
-
+        */
         "<p class = 'twenty-fourth question'>Q24 - Once my product is on the market, my marginal gross margins - a new dollar of revenue minus the cost of producing that revenue - will:</p><button onclick = 'askQuestion(), firstScore()' type='button' class='btn btn-primary choice'>Huh?</button><button onclick = 'askQuestion(), secondScore()' type='button' class='btn btn-primary choice'>Essentially be flat, like a service business</button><button onclick = 'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>Increase gradually, like a hardware business</button><button onclick =  'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>Increase rapidly, like a software business</button>",
 
         "<p class = 'twenty-fifth question'>Q25 - Other startups in my industry raising venture capital at a similar stage of development (product, management team, revenues, partnerships, prior funding, etc.) are getting pre-money valuations of:</p><button onclick =   'askQuestion(), firstScore()' type='button' class='btn btn-primary choice'>Under $1 million</button><button onclick =   'askQuestion(), secondScore()'  type='button' class='btn btn-primary choice'>$1-2 million</button><button onclick =  'askQuestion(), thirdScore()' type='button' class='btn btn-primary choice'>$2-5 million</button><button onclick =  'askQuestion(), fourthScore()' type='button' class='btn btn-primary choice'>Over $5 million</button>"
@@ -54,8 +54,15 @@ const questionArr = [
 
 
 
+        const finalScore = [
+        " First response - it appears that your venture does not yet meet some of the criteria that typically interest professional investors. In general, you will need to achieve at least the second choice for most of the questions, and at least the third choice for questions 1-6, 11, 18, and 24 before professional investors will become very interested. However, every situation is different, so don't give up!", 
+        "2nd - Your compny could be worth ...",
+        "3rd - Your compny could be worth ...",
+        "4th - Your compny could be worth ..."
+        ];
 
         const contactForm = '<div class="chat-form"><form name="contact"><input type="text" class="form-control" placeholder="Name"><input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button></form></div>';
+
 
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
@@ -63,35 +70,64 @@ const questionArr = [
         const chatButton = document.getElementsByClassName('chat-btn');
 
         let i = 0;
+        let j = 0;
         let score = 0;
 
-        function askQuestion() {
-       
-                
-            
 
-                if(i<= questionArr.length-1){
+
+        function giveResult() {
+
+                
+               
+        }
+
+
+
+        function askQuestion() {
+
+
+                if (score <= 9 ){
+                        j = 0;
+                }
+                if (score > 9 && score <= 18){
+                        j = 1
+                }
+                if (score > 18 && score <= 27){
+                        j = 2;
+                }
+                else  if (score > 27){
+                        j = 3;
+                }
+
+
+                if (i<= questionArr.length-1) {
                 newQuestions.innerHTML = questionArr[i];
                 i++;
                 } 
-                else{
-                newQuestions.innerHTML = contactForm;
+                else {
+                newQuestions.innerHTML = finalScore[j]+ contactForm;
                 }      
            }
 
+       
+       
         const firstScore = () => updateScore.innerHTML = score +=1;
-        const secondScore = () => updateScore.innerHTML = score +=5;
-        const thirdScore = () => updateScore.innerHTML = score +=10;
-        const fourthScore = () => updateScore.innerHTML = score += 15;
+        const secondScore = () => updateScore.innerHTML = score +=2;
+        const thirdScore = () => updateScore.innerHTML = score +=3;
+        const fourthScore = () => updateScore.innerHTML = score += 4;
 
+        
+        
+        // close chat button
         function closeBox(){
-                
                 wrapper[0].style.opacity = "0";
                 chatButton[0].style.opacity = "1";
         }
 
 
-       function viewBox() {
+       
+       // view box
+        function viewBox() {
         wrapper[0].style.opacity = "1";
         chatButton[0].style.opacity = "0";
        }
