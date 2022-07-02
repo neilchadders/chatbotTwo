@@ -55,13 +55,13 @@ const questionArr = [
 
 
         const finalScore = [
-        "<h5< First response - it appears that your venture does not yet meet some of the criteria that typically interest professional investors. In general, you will need to achieve at least the second choice for most of the questions, and at least the third choice for questions 1-6, 11, 18, and 24 before professional investors will become very interested. However, every situation is different, so don't give up!</h5>", 
+        "<h5> First response - it appears that your venture does not yet meet some of the criteria that typically interest professional investors. In general, you will need to achieve at least the second choice for most of the questions, and at least the third choice for questions 1-6, 11, 18, and 24 before professional investors will become very interested. However, every situation is different, so don't give up!</h5>", 
         "<h5> 2nd - Your compny could be worth ...</h5>",
         "<h5> 3rd - Your compny could be worth ...</h5>",
         "<h5> 4th - Your compny could be worth ...</h5>"
         ];
 
-        const contactForm = '<div class="chat-form"><form name="contact"><input type="text" class="form-control" placeholder="Name"><input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button></form></div>';
+        const contactForm = '<div class="chat-form"><form name="contact" required><input type="text" class="form-control" placeholder="Name"><input type="email" class="form-control" placeholder="Email" required><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block question">Submit</button></form></div>';
 
 
         const newQuestions = document.getElementById('opening');

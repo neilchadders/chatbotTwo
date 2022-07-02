@@ -7,6 +7,7 @@
 
 body {
     background-color: #CCCCCC;
+    font-family: 'Lato', sans-serif;
    
 }
 
@@ -206,6 +207,14 @@ button {
 }
 
 
+.question {
+font-size: 1.2em;
+}
+
+.choice {
+  font-size: 1.3em;
+}
+
 @media (max-width: 900px) { 
    .wrapper{
 
@@ -220,7 +229,6 @@ button {
 
 .chat-header {
  
-  }
    
 
 }
