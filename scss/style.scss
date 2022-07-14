@@ -1,4 +1,9 @@
 
+$main-grey: #CCCCCC; 
+$main-font: 'Lato', sans-serif;
+$headings-colour: #fff;
+
+
 *,
 *::before,
 *::after {
@@ -6,11 +11,10 @@
 }
 
 body {
-    background-color: #CCCCCC;
-    font-family: 'Lato', sans-serif;
+    background-color: $main-grey;
+    font-family: $main-font;
    
 }
-
 
 
 /* Nav Bar */
@@ -29,43 +33,44 @@ body {
     background-position: top;
     position: relative;
     margin-top: 100px;
+
+
+        &_text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Good way to centre element*/
+        text-align: center;
+        /* this centres anchor tag class = btn as it's display has been set to in-line which is treated as text*/
+        }
+  
+            &_primary {
+            color: $headings-colour;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+        // This is to stop any shakiness in the animation 
+
+            &-main {
+            display: block;
+            margin-bottom: 30px;
+            font-size: 1.5em;
+            font-weight: 400;
+            letter-spacing: .5em;
+            margin-top: 200px;
+            animation: moveInLeft 1s ease-out;
+            }
+      
+            &-sub {
+            display: block;
+            font-size: 1em;
+            font-weight: 700;
+            letter-spacing: .5em;
+            animation: moveInRight 1s ease-out;
+            }
   }
   
-  .header_text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Good way to centre element*/
-    text-align: center;
-    /* this centres anchor tag class = btn as it's display has been set to in-line which is treated as text*/
-  }
-  
-  .heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    /* This is to stop any shakiness in the animation */
-  
-  }
-  
-  .heading-primary-main {
-    display: block;
-    margin-bottom: 30px;
-    font-size: 1.5em;
-    font-weight: 400;
-    letter-spacing: .5em;
-    margin-top: 200px;
-    animation: moveInLeft 1s ease-out;
-  }
-  
-  .heading-primary-sub {
-    display: block;
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: .5em;
-    animation: moveInRight 1s ease-out;
-  }
+}
   
   /* Heading Animation*/
   @keyframes moveInLeft {
@@ -226,11 +231,4 @@ font-size: 1.2em;
    
    }
 
-
-.chat-header {
- 
-   
-
-}
-
-
+  }
