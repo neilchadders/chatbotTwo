@@ -102,7 +102,6 @@ body {
   font-size: 22px;
   border: none;
 }
-
 .chat-wrapper {
   position: fixed;
   right: 15px;
@@ -126,21 +125,18 @@ body {
   position: relative;
   width: 100%;
 }
+.chat-close {
+  text-align: end;
+}
+.chat-close:hover {
+  cursor: pointer;
+}
+.chat-form {
+  padding: 15px;
+}
 
 .close:checked ~ .wrapper {
   opacity: 1;
-}
-
-.fa-window-close {
-  text-align: end;
-}
-
-.fa-window-close:hover {
-  cursor: pointer;
-}
-
-.chat-form {
-  padding: 15px;
 }
 
 .chat-form input,
@@ -180,7 +176,7 @@ button {
 }
 
 @media (max-width: 900px) {
-  .wrapper {
+  chat-wrapper {
     width: 100%;
     right: 0;
     height: 100vh;

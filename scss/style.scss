@@ -101,6 +101,9 @@ body {
     }
   }
 
+
+
+
 //check box and chat button
   .chat {
     display: none !important;
@@ -123,20 +126,20 @@ body {
         font-size: 22px;
         border: none
         }
-    }
+    
 // chat box wrapper
 
-.chat-wrapper {
-    position: fixed;
-    right: 15px;
-    bottom: 100px;
-    width: 50em;
-    height: 40em;
-    overflow-y: scroll;
-    background-color: #fff;
-    border-radius: 5px;
-    opacity: 0;
-    transition: all .8s;
+    &-wrapper {
+        position: fixed;
+        right: 15px;
+        bottom: 100px;
+        width: 50em;
+        height: 40em;
+        overflow-y: scroll;
+        background-color: #fff;
+        border-radius: 5px;
+        opacity: 0;
+        transition: all .8s;
 
 
     &-header {
@@ -152,25 +155,28 @@ body {
     }
 }
 
+    &-close {
+    text-align: end; 
+}
+
+    &-close:hover{
+    cursor: pointer;
+}   
+    &-form {
+    padding: 15px
+}
+  }
+
+
 .close:checked~.wrapper {
     opacity: 1
 }
 
 
   
-  .fa-window-close {
-   
-    text-align: end;
-   
-}
 
-.fa-window-close:hover{
-  cursor: pointer;
-}
 
-.chat-form {
-    padding: 15px
-}
+
 
 .chat-form input,
 textarea,
@@ -221,7 +227,7 @@ font-size: 1.2em;
 }
 
 @media (max-width: 900px) { 
-   .wrapper{
+   chat-wrapper{
 
     width: 100%;
     right: 0;
