@@ -82,14 +82,15 @@ body {
     transform: translate(0);
   }
 }
-/* CHAT */
+.chat {
+  display: none !important;
+}
 .chat-btn {
   position: fixed;
   z-index: 9;
   right: 14px;
   bottom: 30px;
   cursor: pointer;
-  display: none;
   width: 200px;
   height: 50px;
   display: flex;
@@ -102,7 +103,7 @@ body {
   border: none;
 }
 
-.wrapper {
+.chat-wrapper {
   position: fixed;
   right: 15px;
   bottom: 100px;
@@ -114,12 +115,7 @@ body {
   opacity: 0;
   transition: all 0.8s;
 }
-
-.close:checked ~ .wrapper {
-  opacity: 1;
-}
-
-.chat-header {
+.chat-wrapper-header {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 13px;
@@ -129,6 +125,10 @@ body {
   color: #fff;
   position: relative;
   width: 100%;
+}
+
+.close:checked ~ .wrapper {
+  opacity: 1;
 }
 
 .fa-window-close {
@@ -156,10 +156,6 @@ button {
 .btn {
   background-color: blue;
   border: black;
-}
-
-#check {
-  display: none !important;
 }
 
 .choice {
