@@ -63,7 +63,7 @@ const questionArr = [
 
         const contactForm = '<div class="chat-form"><form name="contact" required><input type="text" class="form-control" placeholder="Name"><input type="email" class="form-control" placeholder="Email" required><textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block question">Submit</button></form></div>';
 
-        const speechBubble = "<i class= 'fa fa-commenting-o comment'>"
+        const typing = "<h5><em>typing....</em></h5>"
 
         const newQuestions = document.getElementById('opening');
         const updateScore = document.getElementById('scoring');
@@ -77,7 +77,7 @@ const questionArr = [
 
         function askQuestion(){
                 setTimeout (returnQuestion, 1000);
-                newQuestions.innerHTML= speechBubble;
+                newQuestions.innerHTML= typing;
               
         }
 

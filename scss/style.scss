@@ -2,6 +2,7 @@
 $main-grey: #CCCCCC; 
 $main-font: 'Lato', sans-serif;
 $headings-colour: #fff;
+$button-colour: blue;
 
 
 *,
@@ -24,6 +25,7 @@ body {
     max-height: 50px;
     border: solid 2px;
     margin-left: 10px;  
+    border-radius: 100%;
 }
 
 /* main header */
@@ -121,7 +123,7 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 50px;
-        background-color:blue;
+        background-color:$button-colour;
         color: #fff;
         font-size: 22px;
         border: none
@@ -146,7 +148,7 @@ body {
         display: grid;
         grid-template-columns: 3fr 1fr;
         padding: 13px;
-        background-color: blue;
+        background-color: $button-colour;
         border-radius: 5px 5px 0px 0px;
         margin-bottom: 10px;
         color: #fff;
@@ -191,7 +193,7 @@ button {
 
 
 .btn {
-    background-color: blue;
+    background-color: $button-colour;
     border: black;
 }
 
@@ -212,9 +214,6 @@ button {
     padding:1em;
     min-height: 45%;
     overflow-x:scroll
-         
-    
-    
 }
 
 
